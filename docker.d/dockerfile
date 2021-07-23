@@ -1,0 +1,10 @@
+FROM python:3.9-slim-buster
+RUN apt update && apt upgrade -y \
+	&& apt install -y cron \
+	&& pip install \
+		flask \
+		flask_cors \
+		waitress \
+		pandas
+
+CMD cd $APP_PATH && waitress-serve --port=80 --call $CALL

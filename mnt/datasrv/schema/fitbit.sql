@@ -1,0 +1,6 @@
+DROP TABLE IF EXISTS hr;
+
+CREATE TABLE hr (
+  timestamp INTEGER PRIMARY KEY,
+  value INTEGER NOT NULL
+);
