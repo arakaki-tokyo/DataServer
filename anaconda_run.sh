@@ -34,5 +34,5 @@ fi
 
 # echo "docker run "$OPT_DOCKER
 
-docker run $OPT_DOCKER myconda
+docker run $OPT_DOCKER myconda:202108
 
